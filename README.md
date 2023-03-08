@@ -41,16 +41,16 @@ Java 11 or higher
   - `int[][] numbers` # numbers on the puzzle
   - `boolean[][] isGiven` # need to guess or not
   - `void newPuzzle(int guesses, boolean difficult)` # generates new puzzle with given guesses or most difficult possible
-    - `int[][] getMostDifficultSudoku()` # Generate most difficult possible sudoku board (using greedy algm)
-    - `int[][] getSudokuGuesses(int guesses)` # Generate sudoku board with given no. of guesses <br>
-      1.`int[][] generateSudokuBoard()` # Generates a completely filled random sudoku board <br>
-          - `void helper_fillSubgrid(int[][], int, int)` # Fills 3x3 subgrids with random permutations <br> 
-          - `void helper_fillBoard(int[][], int, int)`   # Fills rest of board with correct values (using backtracking) <br> 
-      2. `boolean hasUniqueSoln(int[][])` # Check if given sudoku is minimal <br>
-          - `List<int[][]> allSolutions(int[][])` # Returns all possible solutions of current sudoku  <br>
-      3. `int removeOneElement(int[][])` # Removes one random element from sudoku board
-  - `boolean isValid(int[][], int, int, int)` # Checks if given cell placement is valid
-  - `boolean isSolved(int[][])` # Check if we have solved the current board   
+    - `getMostDifficultSudoku()` # Generate most difficult possible sudoku board (using greedy algm)
+    - `getSudokuGuesses(int guesses)` # Generate sudoku board with given no. of guesses <br>
+      1.`generateSudokuBoard()` # Generates a completely filled random sudoku board <br>
+          - `helper_fillSubgrid(int[][], int, int)` # Fills 3x3 subgrids with random permutations <br> 
+          - `helper_fillBoard(int[][], int, int)`   # Fills rest of board with correct values (using backtracking) <br> 
+      2. `hasUniqueSoln(int[][])` # Check if given sudoku is minimal <br>
+          - `allSolutions(int[][])` # Returns all possible solutions of current sudoku  <br>
+      3. `removeOneElement(int[][])` # Removes one random element from sudoku board
+  - `isValid(int[][], int, int, int)` # Checks if given cell placement is valid
+  - `isSolved(int[][])` # Check if we have solved the current board   
 - ```java 
   public class GameBoardPanel extends JPanel
   ``` 
