@@ -33,8 +33,8 @@ Java 11 or higher
 - ```java 
   public class Cell extends JTextField
   ``` 
-  - newGame() # reset this cell for new game
-  - paint()   # paint the cell based on its status (Given, Not given, Correct guess, Wrong guess)
+  - `newGame()` # reset this cell for new game
+  - `paint()`  # paint the cell based on its status (Given, Not given, Correct guess, Wrong guess)
 - Puzzle
   - int\[]\[] numbers
 - GameBoardPanel extends JPanel
