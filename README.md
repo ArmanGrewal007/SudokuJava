@@ -37,9 +37,10 @@ Java 11 or higher
 3. Check if current board is proper (has only one solution)
 4. If current board is not proper, add back the previous value you removed which made the sudoku ("unproper"). 
 5. Now you have a "minimal sudoku" at hand, proper sudoku with most possible removed cells.
+
 <div style="display: inline-block;">
   <div style="display: inline-block; width: 50%;">Left content</div>
-  <img src="arrimg.jpg" alt="Image" height="250" style="display: inline-block; width: 50%;"/>
+  <img src="arrimg.png" alt="Image" height="250" style="display: inline-block; width: 50%;"/>
 </div>
 
 
