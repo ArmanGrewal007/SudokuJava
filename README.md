@@ -73,6 +73,7 @@ Java 11 or higher
 ## Overview of greedy algorithn to generate new puzzle - 
 1. Generate a random completely filled sudoku board [(inspiration)](https://www.geeksforgeeks.org/program-sudoku-generator/)
   - First fill the 3x3 subgrids at the diagonal with random permutations (As they are independent of each other) 
+ 
 |--||--||--||--||--||--||--||--||--|
 | 1 | 2 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 4 | 5 | 6 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -83,6 +84,7 @@ Java 11 or higher
 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 2 | 3 |
 | 0 | 0 | 0 | 0 | 0 | 0 | 4 | 5 | 6 |
 | 0 | 0 | 0 | 0 | 0 | 0 | 7 | 8 | 9 |
+
   - Secondly fill all the remaining sudoku board using backtracking
 2. Remove random values from the board one by one
 3. Check if current board is proper (has only one solution)
