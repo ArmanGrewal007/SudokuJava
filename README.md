@@ -74,7 +74,7 @@ Java 11 or higher
 1. Generate a random completely filled sudoku board [(inspiration)](https://www.geeksforgeeks.org/program-sudoku-generator/)
   - First fill the 3x3 subgrids at the diagonal with random permutations (As they are independent of each other) 
 
-  ![](https://imgur.com/a/BcDW0GB)
+  <img src="https://imgur.com/79M1Z3h" />
 
   - Secondly fill all the remaining sudoku board using backtracking
 2. Remove random values from the board one by one
