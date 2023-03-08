@@ -45,9 +45,9 @@ Java 11 or higher
     - `int[][] getSudokuGuesses(int guesses)` # Generate sudoku board with given no. of guesses <br>
       1.`int[][] generateSudokuBoard()` # Generates a completely filled random sudoku board
         - `void helper_fillSubgrid(int[][], int, int)` # Fills 3x3 subgrids with random permutations
-        - `void helper_fillBoard(int[][], int, int)`   # Fills rest of board with correct values (using backtracking)
+        - `void helper_fillBoard(int[][], int, int)`   # Fills rest of board with correct values (using backtracking) <br>
       2. `boolean hasUniqueSoln(int[][])` # Check if given sudoku is minimal
-        - `List<int[][]> allSolutions(int[][])` # Returns all possible solutions of current sudoku 
+        - `List<int[][]> allSolutions(int[][])` # Returns all possible solutions of current sudoku  <br>
       3. `int removeOneElement(int[][])` # Removes one random element from sudoku board
   - `boolean isValid(int[][], int, int, int)` # Checks if given cell placement is valid
   - `boolean isSolved(int[][])` # Check if we have solved the current board   
