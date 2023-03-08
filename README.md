@@ -29,12 +29,23 @@ Java 11 or higher
 1. It is a grid with 9 rows, 9 columns and 9 boxes (or blocks or regions), each having 9 cells (or squares), for a total of 81 cells
 2. Each row, each column and each box must have a unique number in them
 
-
+## Code Heirarchy - 
+- Cell extends JTextField 
+  - newGame() # reset this cell for new game
+  - paint()   # paint the cell based on its status (Given, Not given, Correct guess, Wrong guess)
+- Puzzle
+  - int\[]\[] numbers
+- GameBoardPanel extends JPanel
+- SudokuMain
 ## Improvements Pending - 
-```html
-<span style="color:green;"> green text </span>
-```
-- <span style="color:green;"> Add a reset button to generate new sudokus </span>
-  - First 
+
+- ~ Add a reset button to generate new sudokus ~
 - Adding a difficulty bar to generate Easy/Medium/Hard sudokus (currently it generates hardest it can find using a Greedy algorithm)
-- 
+- After entering a guess, highlight all boxes with the same value of the guess and signal the conflicting cells if any.
+- Timer (pause/resume), score, progress bar.
+- Sound effect, background music, enable/disable sound?
+- Try `KeyEvent` with `keyTyped()` handler; or other means that does not require pushing of ENTER key.
+- High score and player name?
+- Hints and cheats (reveal a cell, or reveal all cells with number 8)?
+- Mouseless interface?
+- Multi-Player network game.
