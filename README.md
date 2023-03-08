@@ -85,7 +85,7 @@ Java 11 or higher
     - `JButton btnSolve` # Button to solve the game
 
 ## Improvements Pending - 
-- ~ Add a reset button to generate new sudokus ~
+- ~Add a reset button to generate new sudokus~
 - Adding a difficulty bar to generate Easy/Medium/Hard sudokus (currently it generates hardest it can find using a Greedy algorithm)
 - After entering a guess, highlight all boxes with the same value of the guess and signal the conflicting cells if any.
 - Timer (pause/resume), score, progress bar.
