@@ -42,7 +42,7 @@ Java 11 or higher
   - `boolean[][] isGiven` # need to guess or not
   - `void newPuzzle(int guesses, boolean difficult)` # generates new puzzle with given guesses or most difficult possible
     - `int[][] getMostDifficultSudoku()` # Generate most difficult possible sudoku board (using greedy algm)
-    - `int[][] getSudokuGuesses(int guesses)` # Generate sudoku board with given no. of guesses
+    - `int[][] getSudokuGuesses(int guesses)` # Generate sudoku board with given no. of guesses <br>
       1.`int[][] generateSudokuBoard()` # Generates a completely filled random sudoku board
         - `void helper_fillSubgrid(int[][], int, int)` # Fills 3x3 subgrids with random permutations
         - `void helper_fillBoard(int[][], int, int)`   # Fills rest of board with correct values (using backtracking)
