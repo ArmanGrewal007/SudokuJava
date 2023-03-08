@@ -23,3 +23,15 @@ Java 11 or higher
 
 ## This is what the game look like
 <img src="SudokuTest.gif" width="500" />
+
+## Additional notes about sudoku - 
+# Sudoku rules - 
+1. It is a grid with 9 rows, 9 columns and 9 boxes (or blocks or regions), each having 9 cells (or squares), for a total of 81 cells
+2. Each row, each column and each box must have a unique number in them
+
+
+## Improvements Pending - 
+- <span style="color:green;"> Add a reset button to generate new sudokus </span>
+  - First 
+- Adding a difficulty bar to generate Easy/Medium/Hard sudokus (currently it generates hardest it can find using a Greedy algorithm)
+- 
