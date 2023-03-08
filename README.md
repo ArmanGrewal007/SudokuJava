@@ -1,3 +1,3 @@
 # SudokuJava
 
-<img src="SudokuTest.gif" width="250" height="250"/>
+<img src="SudokuTest.gif" width="500" style="  display: block; margin-left: auto; margin-right: auto; width: 50%;"/>
