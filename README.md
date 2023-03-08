@@ -43,11 +43,6 @@ Java 11 or higher
 4. If current board is not proper, add back the previous value you removed which made the sudoku ("unproper"). 
 5. Now you have a "minimal sudoku" at hand, proper sudoku with most possible removed cells.
 
-<div align="center">
-  <img src="arrimg.png" alt="Image" height="150" />
-</div>
-
-
 ### Code Heirarchy - 
 - ```java 
   public class Cell extends JTextField
