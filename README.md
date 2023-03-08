@@ -31,6 +31,9 @@ Java 11 or higher
 
 
 ## Improvements Pending - 
+```html
+<span style="color:green;"> green text </span>
+```
 - <span style="color:green;"> Add a reset button to generate new sudokus </span>
   - First 
 - Adding a difficulty bar to generate Easy/Medium/Hard sudokus (currently it generates hardest it can find using a Greedy algorithm)
