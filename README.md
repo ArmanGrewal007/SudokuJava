@@ -29,7 +29,7 @@ Java 11 or higher
 1. It is a grid with 9 rows, 9 columns and 9 boxes (or blocks or regions), each having 9 cells (or squares), for a total of 81 cells
 2. Each row, each column and each box must have a unique number in them
 
-## Overview of greedy algorithn to generate new puzzle - 
+### Overview of greedy algorithn to generate new puzzle - 
 1. Generate a random completely filled sudoku board [(inspiration)](https://www.geeksforgeeks.org/program-sudoku-generator/)
   - First fill the 3x3 subgrids at the diagonal with random permutations (As they are independent of each other) 
 
