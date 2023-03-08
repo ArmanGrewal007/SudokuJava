@@ -1,3 +1,3 @@
 # SudokuJava
 
-[!img](SudokuTest.gif)
+![](SudokuTest.gif)
