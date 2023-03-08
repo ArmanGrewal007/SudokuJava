@@ -25,11 +25,23 @@ Java 11 or higher
 <div align="center"> <img src="SudokuTest.gif" width="500" /> </div>
 
 ## Additional notes about sudoku - 
-# Sudoku rules - 
+### Sudoku rules - 
 1. It is a grid with 9 rows, 9 columns and 9 boxes (or blocks or regions), each having 9 cells (or squares), for a total of 81 cells
 2. Each row, each column and each box must have a unique number in them
 
-## Code Heirarchy - 
+## Overview of greedy algorithn to generate new puzzle - 
+1. Generate a random completely filled sudoku board [(inspiration)](https://www.geeksforgeeks.org/program-sudoku-generator/)
+  - First fill the 3x3 subgrids at the diagonal with random permutations (As they are independent of each other) 
+
+<div align="center"> <img src="arrimg.png" height="250"/> </div>
+
+  - Secondly fill all the remaining sudoku board using backtracking
+2. Remove random values from the board one by one
+3. Check if current board is proper (has only one solution)
+4. If current board is not proper, add back the previous value you removed which made the sudoku ("unproper"). 
+5. Now you have a "minimal sudoku" at hand, proper sudoku with most possible removed cells.
+
+### Code Heirarchy - 
 - ```java 
   public class Cell extends JTextField
   ``` 
@@ -70,20 +82,7 @@ Java 11 or higher
     - `JButton btnResetGame` # Button to reset game
     - `JButton btnSolve` # Button to solve the game
 
-## Overview of greedy algorithn to generate new puzzle - 
-1. Generate a random completely filled sudoku board [(inspiration)](https://www.geeksforgeeks.org/program-sudoku-generator/)
-  - First fill the 3x3 subgrids at the diagonal with random permutations (As they are independent of each other) 
-
-<div align="center"> <img src="arrimg.png" height="250"/> </div>
-
-  - Secondly fill all the remaining sudoku board using backtracking
-2. Remove random values from the board one by one
-3. Check if current board is proper (has only one solution)
-4. If current board is not proper, add back the previous value you removed which made the sudoku ("unproper"). 
-5. Now you have a "minimal sudoku" at hand, proper sudoku with most possible removed cells.
-
 ## Improvements Pending - 
-
 - ~ Add a reset button to generate new sudokus ~
 - Adding a difficulty bar to generate Easy/Medium/Hard sudokus (currently it generates hardest it can find using a Greedy algorithm)
 - After entering a guess, highlight all boxes with the same value of the guess and signal the conflicting cells if any.
