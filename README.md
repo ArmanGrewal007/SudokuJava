@@ -4,7 +4,7 @@
 This is a simple Sudoku game built with [Java-11](https://www.oracle.com/in/java/technologies/javase/jdk11-archive-downloads.html) and Swing's JFrames. 
 The game is interactive, allowing players to enter digits into the grid and see if they are correct or not. 
 The game also includes a backtracking algorithm that players can use to solve the puzzle if they get stuck. 
-Additionally, there is a "New Game" button that generates a new minimal Sudoku puzzle with only one solution.
+Additionally, there is a "New Game" button that generates a new proper Sudoku puzzle with only one solution.
 
 ## Requirements
 Java 11 or higher
@@ -18,7 +18,7 @@ Java 11 or higher
 2. Use the mouse to click on a cell in the grid and enter a digit (1-9) using the keyboard.
 3. Click the "Enter/Return" to see if your current entries are correct. Correct digits will turn green, while incorrect digits will turn red.
 4. Press the "Solve" button to automatically fill in the rest of the puzzle using the backtracking algorithm.
-5. To generate a new minimal Sudoku puzzle with only one solution, click the "New Game" button.
+5. To generate a new proper Sudoku puzzle with only one solution, click the "New Game" button.
 6. To exit the game, simply close the window.
 
 ## This is what the game look like
@@ -46,7 +46,7 @@ Java 11 or higher
       1.`generateSudokuBoard()` # Generates a completely filled random sudoku board <br>
           - `helper_fillSubgrid(int[][], int, int)` # Fills 3x3 subgrids with random permutations <br> 
           - `helper_fillBoard(int[][], int, int)`   # Fills rest of board with correct values (using backtracking) <br> 
-      2. `hasUniqueSoln(int[][])` # Check if given sudoku is minimal <br>
+      2. `hasUniqueSoln(int[][])` # Check if given sudoku is proper <br>
           - `allSolutions(int[][])` # Returns all possible solutions of current sudoku  <br>
       3. `removeOneElement(int[][])` # Removes one random element from sudoku board
   - `isValid(int[][], int, int, int)` # Checks if given cell placement is valid
@@ -69,6 +69,25 @@ Java 11 or higher
   - `Jpanel buttonPanel` # Panel for two buttons
     - `JButton btnResetGame` # Button to reset game
     - `JButton btnSolve` # Button to solve the game
+
+## Overview of greedy algorithn to generate new puzzle - 
+1. Generate a random completely filled sudoku board [(inspiration)](https://www.geeksforgeeks.org/program-sudoku-generator/)
+  - First fill the 3x3 subgrids at the diagonal with random permutations (As they are independent of each other) 
+$$ \begin{bmatrix} 3 & 8 & 5 & 0 & 0 & 0 & 0 & 0 & 0 //
+                    9 & 2 & 1 & 0 & 0 & 0 & 0 & 0 & 0 //
+                    6 & 4 & 7 & 0 & 0 & 0 & 0 & 0 & 0 //
+                    0 & 0 & 0 & 1 & 2 & 3 & 0 & 0 & 0 //
+                    0 & 0 & 0 & 7 & 8 & 4 & 0 & 0 & 0 //
+                    0 & 0 & 0 & 6 & 9 & 5 & 0 & 0 & 0 //
+                    0 & 0 & 0 & 0 & 0 & 0 & 8 & 7 & 3 //
+                    0 & 0 & 0 & 0 & 0 & 0 & 9 & 6 & 2 //
+                    0 & 0 & 0 & 0 & 0 & 0 & 1 & 4 & 5 // 
+\end{bmatrix} $$
+  - Secondly fill all the remaining sudoku board using backtracking
+2. Remove random values from the board one by one
+3. Check if current board is proper (has only one solution)
+4. If current board is not proper, add back the previous value you removed which made the sudoku ("unproper"). 
+5. Now you have a "minimal sudoku" at hand, proper sudoku with most possible removed cells.
 
 ## Improvements Pending - 
 
