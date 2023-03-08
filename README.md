@@ -31,7 +31,7 @@ Java 11 or higher
 
 ## Code Heirarchy - 
 - ```java 
-  Cell extends JTextField
+  public class Cell extends JTextField
   ``` 
   - newGame() # reset this cell for new game
   - paint()   # paint the cell based on its status (Given, Not given, Correct guess, Wrong guess)
