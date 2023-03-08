@@ -54,11 +54,23 @@ Java 11 or higher
 - ```java 
   public class GameBoardPanel extends JPanel
   ``` 
-  -
+  - `addBordersAndCells()` # adds borders and numbers to cells
+  - `solveAndSet()` # Function added to btnSolve
+    - `solve()` # Solves puzzle using backtracking
+  - `isValid(int[][], int, int, int)` # Checks if given cell placement is valid
+  - `isSolved()` # Check if we have solved the current board   
+  - `newGame()` # Function added to btnResetGame
+  - ```java
+     private class CellInputListener implements ActionListener
+  ```
 - ```java 
   public class SudokuMain extends JFrame
   ``` 
-  -
+  - `GameBoardPanel board` # Puzzle 
+  - `Jpanel buttonPanel` # Panel for two buttons
+    - `JButton btnResetGame` # Button to reset game
+    - `JButton btnSolve` # Button to solve the game
+
 ## Improvements Pending - 
 
 - ~ Add a reset button to generate new sudokus ~
