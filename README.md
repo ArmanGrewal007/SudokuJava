@@ -30,7 +30,9 @@ Java 11 or higher
 2. Each row, each column and each box must have a unique number in them
 
 ## Code Heirarchy - 
-- ```java Cell extends JTextField``` 
+- ```java 
+  Cell extends JTextField
+  ``` 
   - newGame() # reset this cell for new game
   - paint()   # paint the cell based on its status (Given, Not given, Correct guess, Wrong guess)
 - Puzzle
