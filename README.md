@@ -61,8 +61,7 @@ Java 11 or higher
   - `isSolved()` # Check if we have solved the current board   
   - `newGame()` # Function added to btnResetGame
   - ```java
-     private class CellInputListener implements ActionListener
-  ```
+     private class CellInputListener implements ActionListener```
 - ```java 
   public class SudokuMain extends JFrame
   ``` 
