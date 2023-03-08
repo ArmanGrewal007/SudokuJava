@@ -22,7 +22,7 @@ Java 11 or higher
 6. To exit the game, simply close the window.
 
 ## This is what the game look like
-<img src="SudokuTest.gif" width="500" />
+<div align="center"> <img src="SudokuTest.gif" width="500" /> </div>
 
 ## Additional notes about sudoku - 
 # Sudoku rules - 
