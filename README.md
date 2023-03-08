@@ -74,6 +74,7 @@ Java 11 or higher
 1. Generate a random completely filled sudoku board [(inspiration)](https://www.geeksforgeeks.org/program-sudoku-generator/)
   - First fill the 3x3 subgrids at the diagonal with random permutations (As they are independent of each other) 
  
+|  |   |   |   |   |   |   |   |   |
 |--||--||--||--||--||--||--||--||--|
 | 1 | 2 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 4 | 5 | 6 | 0 | 0 | 0 | 0 | 0 | 0 |
